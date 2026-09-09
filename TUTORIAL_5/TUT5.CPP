@@ -7,12 +7,12 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <iostream>
-
+using namespace std;
 double convert(double meters) {
 	return meters * 100.0;
 }
 
-double convert(double kilometers, bool isKm) {
+double convert(double kilometers) {
 	return kilometers * 1000.0;
 }
 
@@ -20,8 +20,8 @@ int main() {
 	double m = 5.5;
 	double km = 2.3;
 
-	std::cout << m << " m = " << convert(m) << " cm" << std::endl;
-	std::cout << km << " km = " << convert(km, true) << " m" << std::endl;
+	cout << m << " m = " << convert(m) << " cm" << endl;
+	cout << km << " km = " << convert(km) << " m" << endl;
 
 	return 0;
 }
