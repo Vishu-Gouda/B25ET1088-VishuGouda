@@ -8,7 +8,7 @@ Code, Compile, Run and Debug online from anywhere in world.
 *******************************************************************************/
 #include <iostream>
 using namespace std;
-double convert(double meters) {
+float convert(float meters) {
 	return meters * 100.0;
 }
 
